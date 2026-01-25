@@ -3,19 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+
   <title>AssetsNow — Premium Digital Assets</title>
-<meta name="description" content="AssetsNow — Advisory & Strategic Acquisition Platform for Premium Digital Assets. Privately held. Discreetly offered." />
+  <meta name="description" content="AssetsNow — Advisory &amp; Strategic Acquisition Platform for Premium Digital Assets. Privately held. Discreetly offered." />
+  <meta name="robots" content="index,follow" />
 
-<link rel="canonical" href="https://assetsnow.com/" />
+  <link rel="canonical" href="https://assetsnow.com/" />
 
-<meta property="og:title" content="AssetsNow" />
-<meta property="og:description" content="Advisory & Strategic Acquisition Platform for Premium Digital Assets. Privately held. Discreetly offered." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://assetsnow.com/" />
+  <meta property="og:title" content="AssetsNow" />
+  <meta property="og:description" content="Advisory &amp; Strategic Acquisition Platform for Premium Digital Assets. Privately held. Discreetly offered." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://assetsnow.com/" />
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="AssetsNow" />
-<meta name="twitter:description" content="Advisory & Strategic Acquisition Platform for Premium Digital Assets." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AssetsNow" />
+  <meta name="twitter:description" content="Advisory &amp; Strategic Acquisition Platform for Premium Digital Assets." />
 
   <style>
   :root{
@@ -58,10 +60,10 @@
     font-size: clamp(38px, 7vw, 56px);
     line-height: 1;
     letter-spacing: -0.02em;
-    gap: 0; /* explicit */
+    gap: 0;
+    margin: 0;
   }
 
-  /* Make it read like ONE wordmark (AssetsNow), not two words */
   .brand-assets{
     font-weight: 800;
     color: var(--ink);
@@ -71,7 +73,6 @@
   .brand-now{
     font-weight: 750;
     color: var(--muted2);
-    /* pull together + slight optical kerning */
     margin-left: -0.04em;
     letter-spacing: -0.015em;
   }
@@ -109,7 +110,6 @@
     margin: 34px auto;
   }
 
-  /* Portfolio */
   .section-label{
     margin: 0 auto 14px;
     font-size:12px;
@@ -118,7 +118,6 @@
     color:var(--muted);
   }
 
-  /* Make links feel like SmartDevices resource links (quiet, institutional) */
   .jump-link{
     display:inline-block;
     margin: 0 auto 18px;
@@ -188,21 +187,7 @@
     max-width: 80ch;
   }
 
-  .btn{
-    display:inline-block;
-    padding:12px 18px;
-    border-radius:12px;
-    background:var(--ink);
-    color:#fff;
-    text-decoration:none;
-    font-weight:650;
-    letter-spacing:.01em;
-    border: 1px solid rgba(15,15,16,.16);
-    margin-top: 6px;
-  }
-  .btn:hover{ opacity:.92; }
-
-  /* === Executive Inquiry Panel (institutional / minimal) === */
+  /* === Executive Inquiry Panel === */
   .exec-panel{
     margin: 46px auto 0;
     max-width: 860px;
@@ -212,7 +197,7 @@
     border: 1px solid var(--panelLine);
     box-shadow: var(--shadow);
     text-align: center;
-    color: var(--ink); /* keep safe */
+    color: var(--ink);
   }
 
   .exec-title{
@@ -301,6 +286,20 @@
     text-align: center;
   }
 
+  /* Email fallback under the form */
+  .exec-email-fallback{
+    margin-top: 14px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--muted);
+    text-align: center;
+  }
+  .exec-email-fallback a{
+    color: inherit;
+    text-decoration: none;
+  }
+  .exec-email-fallback a:hover{ text-decoration: underline; }
+
   footer{
     margin-top:60px;
     font-size:13px;
@@ -339,15 +338,13 @@
     }
 
     .tagline{ color: var(--ink); }
+
     .pill{
       background:rgba(0,0,0,.18);
       border-color:rgba(245,245,247,.12);
       color:var(--muted);
     }
 
-    .btn{ background:#f5f5f7; color:#0b0b0c; }
-
-    /* Ensure form fields read well in dark mode */
     .exec-form input,
     .exec-form textarea{
       background: rgba(255,255,255,.06);
@@ -365,17 +362,18 @@
       border-color: rgba(245,245,247,.18);
     }
   }
-</style>
+  </style>
 </head>
 
 <body>
   <main>
-    <!-- AssetsNow header -->
     <header class="site-header">
-      <div class="brand" aria-label="AssetsNow">
+      <!-- Make brand the H1 for SEO/structure -->
+      <h1 class="brand" aria-label="AssetsNow">
         <span class="brand-assets">Assets</span><span class="brand-now">Now</span>
-      </div>
+      </h1>
 
+      <!-- Tagline as H2 is fine (or you can make it a <p>) -->
       <h2 class="tagline">
         Advisory &amp; Strategic Acquisition Platform for Premium Digital Assets
       </h2>
@@ -394,7 +392,6 @@
     <h2 class="section-label">Selected Holdings</h2>
     <a class="jump-link" href="#executive-inquiries">Executive Inquiries →</a>
 
-    <!-- Limit to ~6 featured assets (strongest hierarchy + balance) -->
     <section class="grid" aria-label="Selected holdings">
       <article class="card">
         <p class="domain">SmartDevices.com</p>
@@ -427,14 +424,14 @@
       </article>
 
       <article class="card">
-  <p class="domain">PrivacyLayer.com</p>
-  <p class="meta">Foundational privacy, data protection, and governance layer.</p>
-  <div class="pillrow">
-    <span class="pill">Privacy</span>
-    <span class="pill">Governance</span>
-    <span class="pill">Infrastructure</span>
-  </div>
-</article>
+        <p class="domain">PrivacyLayer.com</p>
+        <p class="meta">Foundational privacy, data protection, and governance layer.</p>
+        <div class="pillrow">
+          <span class="pill">Privacy</span>
+          <span class="pill">Governance</span>
+          <span class="pill">Infrastructure</span>
+        </div>
+      </article>
 
       <article class="card">
         <p class="domain">Search.chat</p>
@@ -445,7 +442,7 @@
           <span class="pill">Command</span>
         </div>
       </article>
-      
+
       <article class="card">
         <p class="domain">Support.chat</p>
         <p class="meta">Customer support command surface and service gateway.</p>
@@ -465,7 +462,6 @@
       Institutional interest · Global counterparties · Confidential transactions
     </div>
 
-    <!-- Executive Inquiries -->
     <section class="exec-panel" id="executive-inquiries" aria-label="Executive Inquiries">
       <h2 class="exec-title">Executive Inquiries</h2>
       <div class="exec-divider"></div>
@@ -478,11 +474,23 @@
 
       <form id="exec-inquiry-form" class="exec-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <div class="exec-fields">
-          <input name="name" required placeholder="Full name" />
-          <input name="organization" required placeholder="Organization" />
-          <input name="role" placeholder="Role / Title (optional)" />
+          <input name="name" type="text" required placeholder="Full name" />
+          <input name="organization" type="text" required placeholder="Organization" />
+          <input name="role" type="text" placeholder="Role / Title (optional)" />
           <input name="email" type="email" required placeholder="Email" />
           <textarea name="message" required placeholder="Inquiry (asset(s) of interest, intended use, timeline)"></textarea>
+
+          <!-- Attribution fields (captured via script) -->
+          <input type="hidden" name="utm_source" />
+          <input type="hidden" name="utm_medium" />
+          <input type="hidden" name="utm_campaign" />
+          <input type="hidden" name="utm_term" />
+          <input type="hidden" name="utm_content" />
+          <input type="hidden" name="referrer" />
+          <input type="hidden" name="landing_url" />
+          <input type="hidden" name="user_agent" />
+          <input type="hidden" name="timezone" />
+          <input type="hidden" name="language" />
         </div>
 
         <input type="hidden" name="_subject" value="AssetsNow — Executive Inquiry" />
@@ -492,22 +500,13 @@
         <button type="submit">Request Executive Access</button>
         <div class="exec-status" aria-live="polite"></div>
         <div class="exec-note">Confidential process. Qualified counterparties only.</div>
-      <!-- Attribution fields -->
-<input type="hidden" name="utm_source" />
-<input type="hidden" name="utm_medium" />
-<input type="hidden" name="utm_campaign" />
-<input type="hidden" name="utm_term" />
-<input type="hidden" name="utm_content" />
-<input type="hidden" name="referrer" />
-<input type="hidden" name="landing_url" />
-<input type="hidden" name="user_agent" />
-<input type="hidden" name="timezone" />
-<input type="hidden" name="language" />
       </form>
-      <p class="exec-note" style="margin-top:14px;">
-  Prefer email? 
-  <a href="mailto:contact@assetsnow.com">contact@assetsnow.com →</a>
-</p>
+
+      <!-- Email fallback BELOW the form (non-competing, clean) -->
+      <p class="exec-email-fallback">
+        Prefer email?
+        <a href="mailto:contact@assetsnow.com">contact@assetsnow.com →</a>
+      </p>
     </section>
 
     <footer>
@@ -516,62 +515,60 @@
       <div>Confidential process · Qualified counterparties only.</div>
     </footer>
   </main>
-</body>
 
   <script>
-(function () {
-  const form = document.getElementById("exec-inquiry-form");
-  if (!form) return;
+  (function () {
+    const form = document.getElementById("exec-inquiry-form");
+    if (!form) return;
 
-  const status = form.querySelector(".exec-status");
+    const status = form.querySelector(".exec-status");
 
-  const setVal = (name, value) => {
-    const el = form.querySelector(`[name="${name}"]`);
-    if (el) el.value = value || "";
-  };
+    const setVal = (name, value) => {
+      const el = form.querySelector(`[name="${name}"]`);
+      if (el) el.value = value || "";
+    };
 
-  // --- UTM + referrer capture (SmartDevices-style) ---
-  const params = new URLSearchParams(window.location.search);
-  ["utm_source","utm_medium","utm_campaign","utm_term","utm_content"].forEach((key) => {
-    setVal(key, params.get(key));
-  });
+    // UTMs
+    const params = new URLSearchParams(window.location.search);
+    ["utm_source","utm_medium","utm_campaign","utm_term","utm_content"].forEach((key) => {
+      setVal(key, params.get(key));
+    });
 
-  setVal("referrer", document.referrer || "");
-  setVal("landing_url", window.location.href);
-  setVal("user_agent", navigator.userAgent || "");
-  setVal("timezone", Intl.DateTimeFormat().resolvedOptions().timeZone || "");
-  setVal("language", navigator.language || "");
+    // Attribution
+    setVal("referrer", document.referrer || "");
+    setVal("landing_url", window.location.href);
+    setVal("user_agent", navigator.userAgent || "");
+    setVal("timezone", Intl.DateTimeFormat().resolvedOptions().timeZone || "");
+    setVal("language", navigator.language || "");
 
-  // --- Submit handler ---
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    if (status) status.textContent = "Sending…";
+    // Submit handler
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (status) status.textContent = "Sending…";
 
-    try {
-      const res = await fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-        headers: { "Accept": "application/json" }
-      });
+      try {
+        const res = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: { "Accept": "application/json" }
+        });
 
-      if (!res.ok) throw new Error("Bad response");
+        if (!res.ok) throw new Error("Bad response");
 
-      if (status) status.textContent = "Sent. Redirecting…";
+        if (status) status.textContent = "Sent. Redirecting…";
 
-      const next = form.querySelector('[name="_next"]')?.value;
+        const next = form.querySelector('[name="_next"]')?.value;
 
-      // reset AFTER reading _next
-      form.reset();
+        form.reset();
+        if (next) window.location.href = next;
 
-      if (next) window.location.href = next;
-
-    } catch (err) {
-      if (status) status.textContent =
-        "Couldn’t send right now. Please email contact@assetsnow.com.";
-      console.error("Exec inquiry submit failed:", err);
-    }
-  });
-})();
-</script>
+      } catch (err) {
+        if (status) status.textContent =
+          "Couldn’t send right now. Please email contact@assetsnow.com.";
+        console.error("Exec inquiry submit failed:", err);
+      }
+    });
+  })();
+  </script>
 </body>
 </html>
