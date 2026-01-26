@@ -3,8 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
- 
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <title>AssetsNow</title>
+  <meta name="description" content="A private portfolio of category-defining digital naming assets. Discreet acquisition discussions for qualified counterparties." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
@@ -22,649 +26,216 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-  
-  <title>AssetsNow | Strategic Acquisition & Advisory Platform for Premium Digital Assets</title>
 
-<meta name="description" content="AssetsNow is a privately held platform advising on and representing premium digital assets, including category-defining domains and institutional naming rights. Confidential inquiries only." />
+  <!-- OG -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AssetsNow" />
+  <meta property="og:description" content="A private portfolio of category-defining digital naming assets. Discreet acquisition discussions for qualified counterparties." />
+  <meta property="og:url" content="https://assetsnow.com/" />
+  <meta property="og:image" content="https://assetsnow.com/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-<meta name="robots" content="index,follow" />
-
-<link rel="canonical" href="https://assetsnow.com/" />
-
-<meta property="og:title" content="AssetsNow | Strategic Acquisition & Advisory Platform for Premium Digital Assets" />
-<meta property="og:description" content="Privately held platform advising on and representing premium digital assets, including category-defining domains and institutional naming rights." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://assetsnow.com/" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="AssetsNow | Strategic Acquisition & Advisory Platform for Premium Digital Assets" />
-<meta name="twitter:description" content="Privately held platform advising on and representing premium digital assets. Confidential inquiries only." />
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://assetsnow.com/#organization",
-      "name": "AssetsNow",
-      "url": "https://assetsnow.com/",
-      "email": "contact@assetsnow.com",
-      "description": "Advisory and strategic acquisition platform for premium digital assets, including category domains, institutional namespaces, and infrastructure-grade naming rights.",
-      "sameAs": []
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://assetsnow.com/#website",
-      "url": "https://assetsnow.com/",
-      "name": "AssetsNow",
-      "publisher": { "@id": "https://assetsnow.com/#organization" },
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://assetsnow.com/#webpage",
-      "url": "https://assetsnow.com/",
-      "name": "AssetsNow — Premium Digital Assets",
-      "isPartOf": { "@id": "https://assetsnow.com/#website" },
-      "about": { "@id": "https://assetsnow.com/#organization" },
-      "inLanguage": "en-US"
-    }
-  ]
-}
-</script>
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://assetsnow.com/#website",
-      "url": "https://assetsnow.com/",
-      "name": "AssetsNow",
-      "publisher": { "@id": "https://assetsnow.com/#organization" },
-      "inLanguage": "en"
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://assetsnow.com/#webpage",
-      "url": "https://assetsnow.com/",
-      "name": "AssetsNow — Strategic Acquisition Platform for Premium Digital Assets",
-      "isPartOf": { "@id": "https://assetsnow.com/#website" },
-      "about": { "@id": "https://assetsnow.com/#organization" },
-      "inLanguage": "en"
-    },
-    {
-      "@type": "AboutPage",
-      "@id": "https://assetsnow.com/#about",
-      "url": "https://assetsnow.com/#about",
-      "name": "About AssetsNow",
-      "isPartOf": { "@id": "https://assetsnow.com/#website" },
-      "about": { "@id": "https://assetsnow.com/#organization" }
-    },
-    {
-      "@type": "ContactPage",
-      "@id": "https://assetsnow.com/#contact",
-      "url": "https://assetsnow.com/#executive-inquiries",
-      "name": "Contact AssetsNow",
-      "isPartOf": { "@id": "https://assetsnow.com/#website" },
-      "about": { "@id": "https://assetsnow.com/#organization" }
-    }
-  ]
-}
-</script>
-  
   <style>
-  :root{
-    --ink:#0f0f10;
-    --muted:rgba(15,15,16,.62);
-    --muted2:rgba(15,15,16,.45);
-    --line:rgba(15,15,16,.12);
-    --panel:rgba(15,15,16,.02);
-    --panelLine:rgba(15,15,16,.08);
-    --shadow:0 10px 28px rgba(15,15,16,.04);
-    --radius:20px;
-    --radiusSm:12px;
-    --track:.14em;
-  }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { width: 100%; overflow-x: hidden; }
 
-  *, *::before, *::after{ box-sizing:border-box; }
-  html, body{ width:100%; overflow-x:hidden; }
-
-  body{
-    margin:0;
-    padding:40px;
-    font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
-    background:#fff;
-    color:var(--ink);
-    text-align:center;
-  }
-
-  main{ max-width:900px; margin:0 auto; }
-
-  /* === AssetsNow header system === */
-  .site-header{
-    margin-top: 6px;
-    margin-bottom: 26px;
-  }
-
-  .brand{
-    display:inline-flex;
-    align-items:baseline;
-    justify-content:center;
-    font-size: clamp(38px, 7vw, 56px);
-    line-height: 1;
-    letter-spacing: -0.02em;
-    gap: 0;
-    margin: 0;
-  }
-
-  .brand-assets{
-    font-weight: 800;
-    color: var(--ink);
-    letter-spacing: -0.02em;
-  }
-
-  .brand-now{
-    font-weight: 750;
-    color: var(--muted2);
-    margin-left: -0.04em;
-    letter-spacing: -0.015em;
-  }
-
-  .tagline{
-    margin: 12px auto 8px;
-    max-width: 62ch;
-    font-size: 18px;
-    line-height: 1.6;
-    color: var(--ink);
-    font-weight: 500;
-  }
-
-  .micro{
-    font-size:12px;
-    letter-spacing:var(--track);
-    text-transform:uppercase;
-    color:var(--muted);
-    margin-top:8px;
-  }
-
-  .lede{
-    margin: 26px auto 0;
-    max-width: 78ch;
-    font-size:16px;
-    line-height:1.9;
-    color:var(--muted);
-  }
-
-  .divider{
-    width:60%;
-    max-width:420px;
-    height:1px;
-    background:var(--line);
-    margin: 34px auto;
-  }
-
-  .section-label{
-    margin: 0 auto 14px;
-    font-size:12px;
-    letter-spacing:var(--track);
-    text-transform:uppercase;
-    color:var(--muted);
-  }
-
-  .jump-link{
-    display:inline-block;
-    margin: 0 auto 18px;
-    font-size: 13px;
-    letter-spacing: var(--track);
-    text-transform: uppercase;
-    color: var(--muted);
-    text-decoration: none;
-  }
-  .jump-link:hover{ text-decoration: underline; }
-
-  .grid{
-    display:grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 14px;
-    margin: 0 auto;
-    max-width: 900px;
-  }
-
-  .card{
-    text-align:left;
-    padding: 16px 16px 14px;
-    border-radius: var(--radiusSm);
-    background: var(--panel);
-    border: 1px solid var(--panelLine);
-    box-shadow: var(--shadow);
-  }
-
-  .domain{
-    font-weight:700;
-    letter-spacing:.01em;
-    margin:0 0 6px 0;
-    font-size:14px;
-  }
-
-  .meta{
-    margin:0;
-    font-size:13px;
-    line-height:1.55;
-    color:var(--muted);
-  }
-
-  .pillrow{
-    margin-top:10px;
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
-  }
-
-  .pill{
-    display:inline-block;
-    font-size:11px;
-    letter-spacing:.08em;
-    text-transform:uppercase;
-    padding:6px 8px;
-    border-radius:999px;
-    border:1px solid rgba(15,15,16,.10);
-    background:#fff;
-    color:var(--muted);
-  }
-
-  .note{
-    margin: 14px auto 0;
-    font-size:13px;
-    line-height:1.7;
-    color:var(--muted);
-    max-width: 80ch;
-  }
-
-  /* === Executive Inquiry Panel === */
-  .exec-panel{
-    margin: 46px auto 0;
-    max-width: 860px;
-    padding: 22px 24px 24px;
-    border-radius: 18px;
-    background: var(--panel);
-    border: 1px solid var(--panelLine);
-    box-shadow: var(--shadow);
-    text-align: center;
-    color: var(--ink);
-  }
-
-  .exec-title{
-    margin: 0 0 8px 0;
-    font-size: 12px;
-    letter-spacing: var(--track);
-    text-transform: uppercase;
-    color: var(--muted);
-  }
-
-  .exec-divider{
-    width: 42%;
-    max-width: 240px;
-    height: 1px;
-    margin: 8px auto 14px;
-    background: var(--line);
-  }
-
-  .exec-copy{
-    margin: 0 auto 16px;
-    max-width: 70ch;
-    font-size: 15px;
-    line-height: 1.75;
-    color: var(--muted);
-  }
-
-  .exec-form{
-    margin: 0 auto;
-    max-width: 520px;
-    text-align: left;
-  }
-
-  .exec-fields{
-    display: grid;
-    gap: 10px;
-  }
-
-  .exec-form input,
-  .exec-form textarea{
-    width: 100%;
-    border: 1px solid var(--line);
-    background: #fff;
-    color: var(--ink);
-    border-radius: 10px;
-    padding: 12px 14px;
-    font: inherit;
-    font-size: 14px;
-    outline: none;
-  }
-
-  .exec-form input::placeholder,
-  .exec-form textarea::placeholder{
-    color: rgba(15,15,16,0.42);
-  }
-
-  .exec-form textarea{
-    resize: vertical;
-    min-height: 120px;
-  }
-
-  .exec-form input:focus,
-  .exec-form textarea:focus{
-    border-color: rgba(15,15,16,0.28);
-  }
-
-  .exec-form button{
-    margin-top: 12px;
-    width: 100%;
-    border: 1px solid rgba(15,15,16,0.16);
-    background: var(--ink);
-    color: #fff;
-    border-radius: 12px;
-    padding: 12px 14px;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    cursor: pointer;
-  }
-  .exec-form button:hover{ opacity: 0.92; }
-
-  .exec-status,
-  .exec-note{
-    margin-top: 10px;
-    font-size: 12px;
-    line-height: 1.6;
-    color: var(--muted);
-    text-align: center;
-  }
-
-  /* Email fallback under the form */
-  .exec-email-fallback{
-    margin-top: 14px;
-    font-size: 12px;
-    line-height: 1.6;
-    color: var(--muted);
-    text-align: center;
-  }
-  .exec-email-fallback a{
-    color: inherit;
-    text-decoration: none;
-  }
-  .exec-email-fallback a:hover{ text-decoration: underline; }
-
-  footer{
-    margin-top:60px;
-    font-size:13px;
-    color:var(--muted);
-    line-height:1.7;
-  }
-  footer a{ color:inherit; text-decoration:none; }
-  footer a:hover{ text-decoration:underline; }
-
-  /* Responsive */
-  @media (max-width: 860px){
-    .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  }
-  @media (max-width: 520px){
-    body{ padding:22px; }
-    .grid{ grid-template-columns: 1fr; }
-    .tagline{ font-size:16px; }
-    .lede{ font-size:15px; }
-  }
-  @media (max-width: 480px){
-    .exec-panel{ padding: 20px 18px 18px; border-radius: 14px; }
-    .exec-copy{ font-size: 14.5px; }
-  }
-
-  /* Optional dark mode */
-  @media (prefers-color-scheme: dark){
-    body{ background:#0b0b0c; color:#f5f5f7; }
-    :root{
-      --ink:#f5f5f7;
-      --muted:rgba(245,245,247,.70);
-      --muted2:rgba(245,245,247,.52);
-      --line:rgba(245,245,247,.14);
-      --panel:rgba(245,245,247,.04);
-      --panelLine:rgba(245,245,247,.10);
-      --shadow:0 10px 28px rgba(0,0,0,.28);
+    body{
+      margin:0;
+      background:#ffffff;
+      color:#0f0f10;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      min-height:100vh;
+      text-align:center;
+      padding:40px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
     }
 
-    .tagline{ color: var(--ink); }
+    .card{ width: 100%; max-width: 860px; margin: auto 0; }
 
-    .pill{
-      background:rgba(0,0,0,.18);
-      border-color:rgba(245,245,247,.12);
-      color:var(--muted);
-    }
-
-    .exec-form input,
-    .exec-form textarea{
-      background: rgba(255,255,255,.06);
-      border-color: var(--line);
-      color: var(--ink);
-    }
-    .exec-form input::placeholder,
-    .exec-form textarea::placeholder{
-      color: rgba(245,245,247,.55);
+    h1{
+      width: 100%;
+      font-size: clamp(34px, 8vw, 58px);
+      letter-spacing: .10em;
+      margin: 0 auto 18px auto;
+      line-height: 1;
+      white-space: nowrap;
+      text-align: center;
     }
 
-    .exec-form button{
-      background:#f5f5f7;
-      color:#0b0b0c;
-      border-color: rgba(245,245,247,.18);
+    .sub{
+      font-size:18px;
+      line-height:1.55;
+      margin: 0 auto;
+      max-width: 760px;
+      font-weight: 600;
     }
-  }
+
+    .microstack{
+      margin-top: 14px;
+      color:#5a5a5f;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      font-size:12px;
+      line-height: 1.9;
+    }
+
+    .divider{
+      width: 60%;
+      max-width: 420px;
+      height: 1px;
+      margin: 28px auto;
+      background: rgba(15,15,16,0.12);
+    }
+
+    .body{
+      margin-top: 22px;
+      font-size: 16px;
+      line-height: 1.72;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .body p{ margin: 0 0 14px 0; color: rgba(15,15,16,0.82); }
+    .body p strong{ color:#0f0f10; }
+
+    .label{
+      margin: 0 0 10px 0;
+      color:#5a5a5f;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      font-size:12px;
+      text-align:center;
+    }
+
+    .assets{
+      margin-top: 10px;
+      text-align: left;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 15px;
+      line-height: 1.75;
+      color:#0f0f10;
+    }
+
+    .assets ul{
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .assets li{
+      margin: 0 0 10px 0;
+      color: rgba(15,15,16,0.82);
+    }
+
+    .assets li:last-child{ margin-bottom: 0; }
+
+    /* Contact footer (no CTA buttons, just process) */
+    .asset-footer{
+      margin-top: 46px;
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.7;
+      color: #5a5a5f;
+    }
+
+    .footer-contact{
+      margin-bottom: 10px;
+    }
+
+    .footer-contact a{
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .footer-contact a:hover{
+      text-decoration: underline;
+    }
+
+    .footer-rep{
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-top: 6px;
+      margin-bottom: 4px;
+      color: rgba(15,15,16,0.55);
+    }
+
+    .footer-qualifier{
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(15,15,16,0.45);
+    }
+
+    @media (max-width: 480px){
+      body{ padding: 22px; }
+      h1{ white-space: normal; letter-spacing: .08em; }
+      .sub{ font-size: 16px; }
+      .body{ font-size: 15px; }
+      .microstack{ letter-spacing: .12em; }
+      .assets{ font-size: 14.5px; }
+    }
   </style>
 </head>
 
 <body>
-  <main>
-    <header class="site-header">
-      <!-- Make brand the H1 for SEO/structure -->
-      <h1 class="brand" aria-label="AssetsNow">
-        <span class="brand-assets">Assets</span><span class="brand-now">Now</span>
-      </h1>
+  <main class="card" role="main" aria-label="AssetsNow homepage">
+    <h1>ASSETSNOW</h1>
 
-      <!-- Tagline as H2 is fine (or you can make it a <p>) -->
-      <h2 class="tagline">
-  Strategic Acquisition &amp; Advisory Platform for Premium Digital Assets
-</h2>
-      
-      <div class="micro">Privately held. Discreetly offered.</div>
-      <div class="micro">A singular portfolio. One principal. Global counterparties.</div>
-    </header>
-
-    <p class="lede">
-      AssetsNow represents a focused holding and advisory platform for premium digital property:
-      category domains, institutional namespaces, and infrastructure-grade naming rights.
+    <p class="sub">
+      A private portfolio of category-defining digital naming assets across infrastructure,
+      identity, and emerging digital markets.
     </p>
 
-    <div class="divider"></div>
-
-    <h2 class="section-label">Selected Holdings</h2>
-    <a class="jump-link" href="#executive-inquiries">Executive Inquiries →</a>
-
-    <section class="grid" aria-label="Selected holdings">
-      <article class="card">
-        <p class="domain">SmartDevices.com</p>
-        <p class="meta">Global intelligent hardware category identity.</p>
-        <div class="pillrow">
-          <span class="pill">Category</span>
-          <span class="pill">Hardware</span>
-          <span class="pill">Acquisition</span>
-        </div>
-      </article>
-
-      <article class="card">
-        <p class="domain">Identity.now</p>
-        <p class="meta">Root namespace for identity across agents, orgs, and systems.</p>
-        <div class="pillrow">
-          <span class="pill">Namespace</span>
-          <span class="pill">Identity</span>
-          <span class="pill">Control layer</span>
-        </div>
-      </article>
-
-      <article class="card">
-        <p class="domain">Finance.now</p>
-        <p class="meta">Instantly legible rail for modern finance and payments.</p>
-        <div class="pillrow">
-          <span class="pill">Finance</span>
-          <span class="pill">Payments</span>
-          <span class="pill">Infrastructure</span>
-        </div>
-      </article>
-
-      <article class="card">
-        <p class="domain">PrivacyLayer.com</p>
-        <p class="meta">Foundational privacy, data protection, and governance layer.</p>
-        <div class="pillrow">
-          <span class="pill">Privacy</span>
-          <span class="pill">Governance</span>
-          <span class="pill">Infrastructure</span>
-        </div>
-      </article>
-
-      <article class="card">
-        <p class="domain">Search.chat</p>
-        <p class="meta">Universal search interface for agents, brands, and services.</p>
-        <div class="pillrow">
-          <span class="pill">Search</span>
-          <span class="pill">Discovery</span>
-          <span class="pill">Command</span>
-        </div>
-      </article>
-
-      <article class="card">
-        <p class="domain">Support.chat</p>
-        <p class="meta">Customer support command surface and service gateway.</p>
-        <div class="pillrow">
-          <span class="pill">Support</span>
-          <span class="pill">Operations</span>
-          <span class="pill">Interface</span>
-        </div>
-      </article>
-    </section>
-
-    <p class="note">Additional portfolio assets available under NDA.</p>
-
-    <a class="jump-link" href="#executive-inquiries">Request Executive Access →</a>
-
-    <div class="micro">
-      Institutional interest · Global counterparties · Confidential transactions
+    <div class="microstack" aria-label="Offering descriptors">
+      PRIVATELY HELD · SELECTIVELY OFFERED<br/>
+      LONG HORIZON · DISCIPLINED PLACEMENT
     </div>
 
-    <section class="exec-panel" id="executive-inquiries" aria-label="Executive Inquiries">
-      <h2 class="exec-title">Executive Inquiries</h2>
-      <div class="exec-divider"></div>
+    <div class="divider" role="separator" aria-hidden="true"></div>
 
-      <p class="exec-copy">
-        AssetsNow represents a privately held portfolio of category-defining digital assets.
-        We engage exclusively with strategic acquirers, operators, and institutional partners.
-        Confidential inquiries may be submitted below.
+    <section class="body" aria-label="Positioning">
+      <p>
+        We acquire and steward naming assets that function as durable infrastructure — not inventory.
       </p>
-
-      <form id="exec-inquiry-form" class="exec-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <div class="exec-fields">
-          <input name="name" type="text" required placeholder="Full name" />
-          <input name="organization" type="text" required placeholder="Organization" />
-          <input name="role" type="text" placeholder="Role / Title (optional)" />
-          <input name="email" type="email" required placeholder="Email" />
-          <textarea name="message" required placeholder="Inquiry (asset(s) of interest, intended use, timeline)"></textarea>
-
-          <!-- Attribution fields (captured via script) -->
-          <input type="hidden" name="utm_source" />
-          <input type="hidden" name="utm_medium" />
-          <input type="hidden" name="utm_campaign" />
-          <input type="hidden" name="utm_term" />
-          <input type="hidden" name="utm_content" />
-          <input type="hidden" name="referrer" />
-          <input type="hidden" name="landing_url" />
-          <input type="hidden" name="user_agent" />
-          <input type="hidden" name="timezone" />
-          <input type="hidden" name="language" />
-        </div>
-
-        <input type="hidden" name="_subject" value="AssetsNow — Executive Inquiry" />
-        <input type="hidden" name="_next" value="https://assetsnow.com/thanks.html" />
-        <input type="text" name="_gotcha" style="display:none" />
-
-        <button type="submit">Request Executive Access</button>
-        <div class="exec-status" aria-live="polite"></div>
-        <div class="exec-note">Confidential process. Qualified counterparties only.</div>
-      </form>
-
-      <!-- Email fallback BELOW the form (non-competing, clean) -->
-      <p class="exec-email-fallback">
-        Prefer email?
-        <a href="mailto:contact@assetsnow.com">contact@assetsnow.com →</a>
+      <p>
+        The portfolio is built around clarity: names that anchor categories, reduce ambiguity,
+        and scale with real systems.
+      </p>
+      <p>
+        <strong>Most assets are held long-term.</strong> Select acquisitions occur quietly and intentionally.
       </p>
     </section>
 
-    <footer>
-      <div><strong>Inquiries</strong></div>
-      <div><a href="mailto:contact@assetsnow.com">contact@assetsnow.com</a></div>
-      <div>Confidential process · Qualified counterparties only.</div>
+    <div class="divider" role="separator" aria-hidden="true"></div>
+
+    <section class="assets" aria-label="Portfolio theses">
+      <p class="label">PORTFOLIO THESIS</p>
+      <ul>
+        <li><strong>Capital & payments:</strong> naming primitives aligned with settlement, rails, and exchange.</li>
+        <li><strong>Identity & trust:</strong> domains positioned for access, verification, compliance, and credentials.</li>
+        <li><strong>Infrastructure layers:</strong> coordination, orchestration, routing, and system-grade surfaces.</li>
+        <li><strong>Asymmetric positions:</strong> selective narrative assets aligned with emerging behaviors.</li>
+      </ul>
+    </section>
+
+    <div class="divider" role="separator" aria-hidden="true"></div>
+
+    <footer class="asset-footer" role="contentinfo" aria-label="Contact">
+      <div class="footer-contact">
+        Acquisition inquiries: <a href="mailto:contact@assetsnow.com">contact@assetsnow.com</a>
+      </div>
+      <div class="footer-rep">Qualified buyers only.</div>
+      <div class="footer-qualifier">Discreet discussions · No public inventory</div>
     </footer>
   </main>
-
-  <script>
-  (function () {
-    const form = document.getElementById("exec-inquiry-form");
-    if (!form) return;
-
-    const status = form.querySelector(".exec-status");
-
-    const setVal = (name, value) => {
-      const el = form.querySelector(`[name="${name}"]`);
-      if (el) el.value = value || "";
-    };
-
-    // UTMs
-    const params = new URLSearchParams(window.location.search);
-    ["utm_source","utm_medium","utm_campaign","utm_term","utm_content"].forEach((key) => {
-      setVal(key, params.get(key));
-    });
-
-    // Attribution
-    setVal("referrer", document.referrer || "");
-    setVal("landing_url", window.location.href);
-    setVal("user_agent", navigator.userAgent || "");
-    setVal("timezone", Intl.DateTimeFormat().resolvedOptions().timeZone || "");
-    setVal("language", navigator.language || "");
-
-    // Submit handler
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      if (status) status.textContent = "Sending…";
-
-      try {
-        const res = await fetch(form.action, {
-          method: "POST",
-          body: new FormData(form),
-          headers: { "Accept": "application/json" }
-        });
-
-        if (!res.ok) throw new Error("Bad response");
-
-        if (status) status.textContent = "Sent. Redirecting…";
-
-        const next = form.querySelector('[name="_next"]')?.value;
-
-        form.reset();
-        if (next) window.location.href = next;
-
-      } catch (err) {
-        if (status) status.textContent =
-          "Couldn’t send right now. Please email contact@assetsnow.com.";
-        console.error("Exec inquiry submit failed:", err);
-      }
-    });
-  })();
-  </script>
 </body>
 </html>
