@@ -9,12 +9,10 @@
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://assetsnow.com/" />
 
-  <!-- Favicons (keep yours if you prefer; this is the modern minimum) -->
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <!-- OG -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="AssetsNow" />
   <meta property="og:description" content="A privately held portfolio of category-defining digital naming assets. Discreet acquisition discussions for qualified counterparties." />
@@ -22,7 +20,6 @@
   <meta property="og:image" content="https://assetsnow.com/og.png" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Structured data (single clean graph) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -65,7 +62,6 @@
       --panel:rgba(15,15,16,.02);
       --panelLine:rgba(15,15,16,.08);
       --shadow:0 10px 28px rgba(15,15,16,.04);
-      --radius:20px;
       --radiusSm:12px;
       --track:.14em;
     }
@@ -75,7 +71,7 @@
 
     body{
       margin:0;
-      padding:40px;
+      padding:36px;
       font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
       background:#fff;
       color:var(--ink);
@@ -88,7 +84,7 @@
     main{ max-width: 900px; margin: 0 auto; }
 
     /* Header */
-    .site-header{ margin-top: 6px; margin-bottom: 26px; }
+    .site-header{ margin-top: 4px; margin-bottom: 18px; }
 
     .brand{
       display:inline-flex;
@@ -100,45 +96,54 @@
       margin: 0;
     }
 
-    .brand-assets{ font-weight: 820; color: var(--ink); letter-spacing: -0.02em; }
-    .brand-now{ font-weight: 760; color: var(--muted2); margin-left: -0.04em; letter-spacing: -0.015em; }
+    .brand-assets{ font-weight: 820; color: var(--ink); }
+    .brand-now{ font-weight: 760; color: var(--muted2); margin-left: -0.04em; }
 
     .tagline{
-      margin: 14px auto 0;
-      max-width: 66ch;
-      font-size: 18px;
-      line-height: 1.6;
-      color: rgba(15,15,16,0.82);
+      margin: 12px auto 0;
+      max-width: 60ch;
+      font-size: 17px;
+      line-height: 1.55;
+      color: rgba(15,15,16,0.84);
       font-weight: 600;
     }
 
     .microstack{
-      margin-top: 14px;
-      color:#5a5a5f;
+      margin-top: 12px;
       letter-spacing:var(--track);
       text-transform:uppercase;
       font-size:12px;
-      line-height: 1.9;
+      line-height: 1.85;
+      color: rgba(15,15,16,0.52);
     }
 
     .lede{
-      margin: 22px auto 0;
-      max-width: 78ch;
-      font-size:16px;
+      margin: 18px auto 0;
+      max-width: 72ch;
+      font-size:15.5px;
       line-height:1.9;
       color:var(--muted);
     }
 
     .divider{
-      width:60%;
-      max-width:420px;
+      width:56%;
+      max-width:380px;
       height:1px;
       background:var(--line);
-      margin: 34px auto;
+      margin: 26px auto;
+    }
+
+    .section-head{
+      display:flex;
+      align-items:baseline;
+      justify-content:center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
     }
 
     .section-label{
-      margin: 0 auto 14px;
+      margin: 0;
       font-size:12px;
       letter-spacing:var(--track);
       text-transform:uppercase;
@@ -146,12 +151,11 @@
     }
 
     .jump-link{
-      display:inline-block;
-      margin: 0 auto 18px;
-      font-size: 13px;
+      margin: 0;
+      font-size: 12px;
       letter-spacing: var(--track);
       text-transform: uppercase;
-      color: var(--muted);
+      color: rgba(15,15,16,0.52);
       text-decoration: none;
     }
     .jump-link:hover{ text-decoration: underline; }
@@ -167,7 +171,7 @@
 
     .card{
       text-align:left;
-      padding: 16px 16px 14px;
+      padding: 15px 15px 13px;
       border-radius: var(--radiusSm);
       background: var(--panel);
       border: 1px solid var(--panelLine);
@@ -188,7 +192,7 @@
       color:var(--muted);
     }
 
-    /* Make tags quieter (less “marketplace”) */
+    /* Pills (quieter, more “notations” than marketing tags) */
     .pillrow{
       margin-top:10px;
       display:flex;
@@ -198,30 +202,30 @@
 
     .pill{
       display:inline-block;
-      font-size:11px;
-      letter-spacing:.08em;
+      font-size:10.5px;
+      letter-spacing:.10em;
       text-transform:uppercase;
-      padding:6px 8px;
+      padding:5px 8px;
       border-radius:999px;
       border:1px solid rgba(15,15,16,.10);
-      background:#fff;
-      color:var(--muted);
+      background: rgba(255,255,255,.72);
+      color: rgba(15,15,16,.52);
     }
 
     .note{
-      margin: 14px auto 0;
-      font-size:13px;
+      margin: 12px auto 0;
+      font-size:12.5px;
       line-height:1.7;
-      color:var(--muted);
-      max-width: 80ch;
+      color: rgba(15,15,16,0.56);
+      max-width: 72ch;
     }
 
-    /* Private Inquiry Panel */
+    /* Inquiry Panel */
     .exec-panel{
-      margin: 46px auto 0;
+      margin: 38px auto 0;
       max-width: 860px;
-      padding: 22px 24px 24px;
-      border-radius: 18px;
+      padding: 20px 22px 22px;
+      border-radius: 16px;
       background: var(--panel);
       border: 1px solid var(--panelLine);
       box-shadow: var(--shadow);
@@ -238,17 +242,17 @@
     }
 
     .exec-divider{
-      width: 42%;
-      max-width: 240px;
+      width: 38%;
+      max-width: 220px;
       height: 1px;
-      margin: 8px auto 14px;
+      margin: 8px auto 12px;
       background: var(--line);
     }
 
     .exec-copy{
-      margin: 0 auto 16px;
-      max-width: 70ch;
-      font-size: 15px;
+      margin: 0 auto 14px;
+      max-width: 66ch;
+      font-size: 14.5px;
       line-height: 1.75;
       color: var(--muted);
     }
@@ -306,7 +310,7 @@
     }
 
     .exec-email-fallback{
-      margin-top: 14px;
+      margin-top: 12px;
       font-size: 12px;
       line-height: 1.6;
       color: var(--muted);
@@ -316,9 +320,9 @@
     .exec-email-fallback a:hover{ text-decoration: underline; }
 
     footer{
-      margin-top:60px;
-      font-size:13px;
-      color:var(--muted);
+      margin-top:46px;
+      font-size:12.5px;
+      color: rgba(15,15,16,0.56);
       line-height:1.7;
     }
     footer a{ color:inherit; text-decoration:none; }
@@ -329,17 +333,18 @@
       .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
     @media (max-width: 520px){
-      body{ padding:22px; }
+      body{ padding:20px; }
       .grid{ grid-template-columns: 1fr; }
       .tagline{ font-size:16px; }
       .lede{ font-size:15px; }
+      .divider{ margin: 22px auto; }
+      .exec-panel{ margin-top: 30px; }
     }
     @media (max-width: 480px){
-      .exec-panel{ padding: 20px 18px 18px; border-radius: 14px; }
-      .exec-copy{ font-size: 14.5px; }
+      .exec-panel{ padding: 18px 16px 16px; border-radius: 14px; }
     }
 
-    /* Optional dark mode (kept because it's classy and costs nothing) */
+    /* Dark mode */
     @media (prefers-color-scheme: dark){
       body{ background:#0b0b0c; color:#f5f5f7; }
       :root{
@@ -351,13 +356,11 @@
         --panelLine:rgba(245,245,247,.10);
         --shadow:0 10px 28px rgba(0,0,0,.28);
       }
-
       .pill{
-        background:rgba(0,0,0,.18);
+        background: rgba(0,0,0,.22);
         border-color:rgba(245,245,247,.12);
-        color:var(--muted);
+        color: rgba(245,245,247,.58);
       }
-
       .exec-form input,
       .exec-form textarea{
         background: rgba(255,255,255,.06);
@@ -366,7 +369,6 @@
       }
       .exec-form input::placeholder,
       .exec-form textarea::placeholder{ color: rgba(245,245,247,.55); }
-
       .exec-form button{
         background:#f5f5f7;
         color:#0b0b0c;
@@ -383,9 +385,7 @@
         <span class="brand-assets">Assets</span><span class="brand-now">Now</span>
       </h1>
 
-      <p class="tagline">
-        A privately held portfolio of category-defining digital naming assets.
-      </p>
+      <p class="tagline">A privately held portfolio of category-defining digital naming assets.</p>
 
       <div class="microstack" aria-label="Offering descriptors">
         PRIVATELY HELD · SELECTIVELY OFFERED<br/>
@@ -394,59 +394,49 @@
     </header>
 
     <p class="lede">
-      AssetsNow stewards a concentrated set of naming assets positioned across capital, identity,
-      and infrastructure. Most positions are held long-term. Select discussions occur quietly and intentionally.
+      AssetsNow holds a small set of long-horizon naming positions across infrastructure, identity, and category ownership.
+      Select discussions occur quietly and intentionally.
     </p>
 
     <div class="divider"></div>
 
-    <h2 class="section-label">Selected Holdings</h2>
-    <a class="jump-link" href="#private-inquiries">Private Inquiries →</a>
+    <div class="section-head" aria-label="Holdings section header">
+      <h2 class="section-label">Representative Assets</h2>
+      <a class="jump-link" href="#private-inquiries">Confidential Inquiry →</a>
+    </div>
 
-    <section class="grid" aria-label="Selected holdings">
-  <article class="card">
-    <p class="domain">SmartDevices.com</p>
-    <p class="meta">
-      Global category identity for intelligent hardware and connected devices.
+    <section class="grid" aria-label="Representative assets">
+      <article class="card">
+        <p class="domain">SmartDevices.com</p>
+        <p class="meta">Global category identity for intelligent hardware and connected devices.</p>
+        <div class="pillrow">
+          <span class="pill">Category</span>
+          <span class="pill">Hardware</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <p class="domain">intl.org</p>
+        <p class="meta">International namespace for global coordination, standards, and institutions.</p>
+        <div class="pillrow">
+          <span class="pill">Global</span>
+          <span class="pill">Institutional</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <p class="domain">identity.now</p>
+        <p class="meta">Root namespace for identity, access, and trust infrastructure.</p>
+        <div class="pillrow">
+          <span class="pill">Identity</span>
+          <span class="pill">Infrastructure</span>
+        </div>
+      </article>
+    </section>
+
+    <p class="note">
+      Selected positions shown. Additional assets available under NDA.
     </p>
-    <div class="pillrow">
-      <span class="pill">Category</span>
-      <span class="pill">Hardware</span>
-    </div>
-  </article>
-
-  <article class="card">
-    <p class="domain">intl.org</p>
-    <p class="meta">
-      International namespace for global coordination, standards, and institutions.
-    </p>
-    <div class="pillrow">
-      <span class="pill">Global</span>
-      <span class="pill">Institutional</span>
-    </div>
-  </article>
-
-  <article class="card">
-    <p class="domain">identity.now</p>
-    <p class="meta">
-      Root namespace for digital identity, access, and trust infrastructure.
-    </p>
-    <div class="pillrow">
-      <span class="pill">Identity</span>
-      <span class="pill">Infrastructure</span>
-    </div>
-  </article>
-</section>
-
-<p class="note">
-  Selected holdings shown. Additional assets available under NDA.
-</p>
-
-    <a class="jump-link" href="#private-inquiries">Request Private Access →</a>
-
-    <div class="microstack" style="margin-top:14px;">
-      DISCREET PROCESS · NO PUBLIC INVENTORY
-    </div>
 
     <section class="exec-panel" id="private-inquiries" aria-label="Private Inquiries">
       <h2 class="exec-title">Private Inquiries</h2>
@@ -454,20 +444,17 @@
 
       <p class="exec-copy">
         AssetsNow engages with strategic acquirers, operators, and institutional counterparties.
-        If you are evaluating acquisition or long-horizon naming positions, you may submit a confidential inquiry below.
+        Confidential inquiries may be submitted below.
       </p>
 
-      <!-- FORMSPREE -->
-      <!-- Replace YOUR_FORMSPREE_ID -->
       <form id="exec-inquiry-form" class="exec-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
         <div class="exec-fields">
           <input name="name" type="text" required placeholder="Full name" />
           <input name="organization" type="text" required placeholder="Organization" />
           <input name="role" type="text" placeholder="Role / Title (optional)" />
           <input name="email" type="email" required placeholder="Email" />
-          <textarea name="message" required placeholder="Inquiry (asset(s) of interest, intended use, timeline)"></textarea>
+          <textarea name="message" required placeholder="Inquiry (asset(s), intended use, timeline)"></textarea>
 
-          <!-- Attribution fields -->
           <input type="hidden" name="utm_source" />
           <input type="hidden" name="utm_medium" />
           <input type="hidden" name="utm_campaign" />
