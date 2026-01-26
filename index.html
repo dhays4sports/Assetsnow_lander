@@ -9,17 +9,23 @@
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://assetsnow.com/" />
 
+  <!-- Favicons -->
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="AssetsNow" />
   <meta property="og:description" content="A privately held portfolio of category-defining digital naming assets. Discreet acquisition discussions for qualified counterparties." />
   <meta property="og:url" content="https://assetsnow.com/" />
   <meta property="og:image" content="https://assetsnow.com/og.png" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AssetsNow" />
+  <meta name="twitter:description" content="A privately held portfolio of category-defining digital naming assets. Discreet acquisition discussions for qualified counterparties." />
+  <meta name="twitter:image" content="https://assetsnow.com/og.png" />
 
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -193,31 +199,11 @@
     }
 
     .card-micro{
-  margin-top:10px;
-  font-size:11px;
-  letter-spacing:var(--track);
-  text-transform:uppercase;
-  color: rgba(15,15,16,0.50);
-}
-
-    /* Pills (quieter, more “notations” than marketing tags) */
-    .pillrow{
       margin-top:10px;
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-    }
-
-    .pill{
-      display:inline-block;
-      font-size:10.5px;
-      letter-spacing:.10em;
+      font-size:11px;
+      letter-spacing:var(--track);
       text-transform:uppercase;
-      padding:5px 8px;
-      border-radius:999px;
-      border:1px solid rgba(15,15,16,.10);
-      background: rgba(255,255,255,.72);
-      color: rgba(15,15,16,.52);
+      color: rgba(15,15,16,0.50);
     }
 
     .note{
@@ -364,11 +350,6 @@
         --panelLine:rgba(245,245,247,.10);
         --shadow:0 10px 28px rgba(0,0,0,.28);
       }
-      .pill{
-        background: rgba(0,0,0,.22);
-        border-color:rgba(245,245,247,.12);
-        color: rgba(245,245,247,.58);
-      }
       .exec-form input,
       .exec-form textarea{
         background: rgba(255,255,255,.06);
@@ -402,18 +383,18 @@
     </header>
 
     <p class="lede">
-      AssetsNow holds a small set of long-horizon naming positions across infrastructure, identity, and category ownership.
+      AssetsNow holds a concentrated set of long-horizon naming positions across infrastructure, identity, and category ownership.
       Select discussions occur quietly and intentionally.
     </p>
 
     <div class="divider"></div>
 
     <div class="section-head" aria-label="Holdings section header">
-      <h2 class="section-label">Representative Assets</h2>
+      <h2 class="section-label">Selected Holdings</h2>
       <a class="jump-link" href="#private-inquiries">Private Inquiries →</a>
     </div>
 
-    <section class="grid" aria-label="Representative assets">
+    <section class="grid" aria-label="Selected holdings">
       <article class="card">
         <p class="domain">SmartDevices.com</p>
         <p class="meta">Global category identity for intelligent hardware and connected devices.</p>
@@ -446,6 +427,8 @@
         Confidential inquiries may be submitted below.
       </p>
 
+      <!-- FORMSPREE -->
+      <!-- Replace YOUR_FORMSPREE_ID before deploying -->
       <form id="exec-inquiry-form" class="exec-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
         <div class="exec-fields">
           <input name="name" type="text" required placeholder="Full name" />
@@ -454,6 +437,7 @@
           <input name="email" type="email" required placeholder="Email" />
           <textarea name="message" required placeholder="Inquiry (asset(s), intended use, timeline)"></textarea>
 
+          <!-- Attribution fields -->
           <input type="hidden" name="utm_source" />
           <input type="hidden" name="utm_medium" />
           <input type="hidden" name="utm_campaign" />
@@ -468,16 +452,20 @@
 
         <input type="hidden" name="_subject" value="AssetsNow — Private Inquiry" />
         <input type="hidden" name="_next" value="https://assetsnow.com/thanks.html" />
-        <input type="text" name="_gotcha" style="display:none" />
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
 
         <button type="submit">Submit Inquiry</button>
         <div class="exec-status" aria-live="polite"></div>
         <div class="exec-note">Confidential process. Qualified counterparties only.</div>
       </form>
 
+      <!-- Email fallback (works reliably) -->
       <p class="exec-email-fallback">
         Prefer email? <a href="mailto:contact@assetsnow.com">contact@assetsnow.com →</a>
       </p>
+
+      <!-- Optional micro-line (quiet, but increases seriousness) -->
+      <p class="exec-note" style="margin-top:10px;">NDA available upon qualified interest.</p>
     </section>
 
     <footer>
@@ -525,6 +513,7 @@
 
         if (status) status.textContent = "Sent. Redirecting…";
         const next = form.querySelector('[name="_next"]')?.value;
+
         form.reset();
         if (next) window.location.href = next;
 
