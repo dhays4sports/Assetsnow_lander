@@ -192,6 +192,14 @@
       color:var(--muted);
     }
 
+    .card-micro{
+  margin-top:10px;
+  font-size:11px;
+  letter-spacing:var(--track);
+  text-transform:uppercase;
+  color: rgba(15,15,16,0.50);
+}
+
     /* Pills (quieter, more “notations” than marketing tags) */
     .pillrow{
       margin-top:10px;
@@ -402,35 +410,26 @@
 
     <div class="section-head" aria-label="Holdings section header">
       <h2 class="section-label">Representative Assets</h2>
-      <a class="jump-link" href="#private-inquiries">Confidential Inquiry →</a>
+      <a class="jump-link" href="#private-inquiries">Private Inquiries →</a>
     </div>
 
     <section class="grid" aria-label="Representative assets">
       <article class="card">
         <p class="domain">SmartDevices.com</p>
         <p class="meta">Global category identity for intelligent hardware and connected devices.</p>
-        <div class="pillrow">
-          <span class="pill">Category</span>
-          <span class="pill">Hardware</span>
-        </div>
+        <p class="card-micro">CATEGORY · HARDWARE</p>
       </article>
 
       <article class="card">
         <p class="domain">intl.org</p>
         <p class="meta">International namespace for global coordination, standards, and institutions.</p>
-        <div class="pillrow">
-          <span class="pill">Global</span>
-          <span class="pill">Institutional</span>
-        </div>
+        <p class="card-micro">GLOBAL · INSTITUTIONAL</p>
       </article>
 
       <article class="card">
         <p class="domain">identity.now</p>
         <p class="meta">Root namespace for identity, access, and trust infrastructure.</p>
-        <div class="pillrow">
-          <span class="pill">Identity</span>
-          <span class="pill">Infrastructure</span>
-        </div>
+        <p class="card-micro">IDENTITY · INFRASTRUCTURE</p>
       </article>
     </section>
 
