@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <title>AssetsNow</title>
-  <meta name="description" content="A privately held portfolio of category-defining digital naming assets. Discreet acquisition discussions for qualified counterparties." />
+  <meta name="description" content="A private representation firm for category-defining digital naming assets. Privately held and selectively offered to qualified counterparties." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://assetsnow.com/" />
 
@@ -17,12 +17,12 @@
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="AssetsNow" />
-  <meta property="og:description" content="A privately held portfolio of category-defining digital naming assets. Discreet acquisition discussions for qualified counterparties." />
+  <meta property="og:description" content="A private representation firm for category-defining digital naming assets. Privately held and selectively offered." />
   <meta property="og:url" content="https://assetsnow.com/" />
   <meta property="og:image" content="https://assetsnow.com/og.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="AssetsNow" />
-  <meta name="twitter:description" content="A privately held portfolio of category-defining digital naming assets. Discreet acquisition discussions for qualified counterparties." />
+  <meta name="twitter:description" content="A private representation firm for category-defining digital naming assets. Privately held and selectively offered." />
   <meta name="twitter:image" content="https://assetsnow.com/og.png" />
 
   <!-- Structured data -->
@@ -36,7 +36,7 @@
         "name":"AssetsNow",
         "url":"https://assetsnow.com/",
         "email":"contact@assetsnow.com",
-        "description":"Privately held portfolio of category-defining digital naming assets. Discreet acquisition discussions for qualified counterparties."
+        "description":"Private representation firm for category-defining digital naming assets. Privately held and selectively offered to qualified counterparties."
       },
       {
         "@type":"WebSite",
@@ -51,6 +51,7 @@
         "@id":"https://assetsnow.com/#webpage",
         "url":"https://assetsnow.com/",
         "name":"AssetsNow",
+        "description":"Private representation firm for category-defining digital naming assets. Privately held and selectively offered.",
         "isPartOf":{"@id":"https://assetsnow.com/#website"},
         "about":{"@id":"https://assetsnow.com/#organization"},
         "inLanguage":"en-US"
@@ -62,7 +63,6 @@
   <style>
   :root{
     --bg:#ffffff;
-
     --ink:#0f0f10;
 
     /* Text */
@@ -124,8 +124,8 @@
     margin: 0;
   }
 
-  .brand-assets{ font-weight: 820; color: var(--ink); }
-  .brand-now{ font-weight: 760; color: var(--muted2); margin-left: -0.04em; }
+  .brand-assets{ font-weight: 780; color: var(--ink); }
+.brand-now{ font-weight: 680; color: var(--muted2); margin-left: -0.04em; }
 
   .tagline{
     margin: 12px auto 0;
@@ -133,7 +133,7 @@
     font-size: 17px;
     line-height: 1.55;
     color: var(--tagline);
-    font-weight: 600;
+    font-weight: 550;
   }
 
   .microstack{
@@ -153,7 +153,6 @@
     color:var(--muted);
   }
 
-  /* One “institutional” sentence without adding bloat */
   .institutional{
     margin: 10px auto 0;
     max-width: 72ch;
@@ -208,13 +207,79 @@
     max-width: 900px;
   }
 
+    /* =========================================
+   Process (firm-like, low-bloat)
+   ========================================= */
+.process{
+  margin: 26px auto 0;
+  max-width: 860px;
+  padding: 16px 18px 14px;
+  border-radius: 14px;
+  background: var(--panel);
+  border: 1px solid var(--panelLine);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.process-title{
+  margin: 0 0 10px 0;
+  font-size: 12px;
+  letter-spacing: var(--track);
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.process-steps{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.process-steps li{
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--fieldBg) 88%, transparent);
+}
+
+.step-k{
+  font-size: 11px;
+  letter-spacing: var(--track);
+  text-transform: uppercase;
+  color: var(--muted2);
+}
+
+.step-t{
+  font-size: 12px;
+  letter-spacing: .02em;
+  color: var(--ink);
+  font-weight: 650;
+}
+
+.process-note{
+  margin: 12px auto 0;
+  max-width: 72ch;
+  font-size: 12px;
+  line-height: 1.75;
+  letter-spacing: var(--track);
+  text-transform: uppercase;
+  color: var(--muted3);
+}
+    
   .card{
     text-align:left;
     padding: 15px 15px 13px;
     border-radius: var(--radiusSm);
     background: var(--panel);
     border: 1px solid var(--panelLine);
-    box-shadow: var(--shadow);
+    box-shadow: none;
   }
 
   .domain{
@@ -253,7 +318,7 @@
     margin: 38px auto 0;
     max-width: 860px;
     padding: 20px 22px 22px;
-    border-radius: 16px;
+    border-radius: 14px;
     background: var(--panel);
     border: 1px solid var(--panelLine);
     box-shadow: var(--shadow);
@@ -351,10 +416,14 @@
   .exec-email-fallback a:hover{ text-decoration: underline; }
 
   footer{
-    margin-top:46px;
-    font-size:12.5px;
-    color: var(--muted4);
-    line-height:1.7;
+  margin-top: 46px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  color: var(--muted4);
+  line-height: 1.75;
+  letter-spacing: .02em;
+}
   }
   footer a{ color:inherit; text-decoration:none; }
   footer a:hover{ text-decoration:underline; }
@@ -379,7 +448,6 @@
   @media (prefers-color-scheme: dark){
     :root{
       --bg:#0b0b0c;
-
       --ink:#f5f5f7;
 
       --tagline: rgba(245,245,247,.86);
@@ -416,7 +484,7 @@
         <span class="brand-assets">Assets</span><span class="brand-now">Now</span>
       </h1>
 
-      <p class="tagline">A privately held portfolio of category-defining digital naming assets.</p>
+      <p class="tagline">A private representation firm for category-defining digital naming assets.</p>
 
       <div class="microstack" aria-label="Offering descriptors">
         PRIVATELY HELD · SELECTIVELY OFFERED<br/>
@@ -425,8 +493,8 @@
     </header>
 
     <p class="lede">
-      AssetsNow holds a concentrated set of long-horizon naming positions across infrastructure, identity, and category ownership.
-      Select discussions occur quietly and intentionally.
+      AssetsNow represents a concentrated portfolio of category-defining digital naming assets across infrastructure,
+      identity, and global coordination.
     </p>
 
     <p class="institutional">
@@ -436,7 +504,7 @@
     <div class="divider"></div>
 
     <div class="section-head" aria-label="Holdings section header">
-      <h2 class="section-label">Selected Holdings</h2>
+      <h2 class="section-label">Selected Assets</h2>
       <a class="jump-link" href="#private-inquiries">Private Inquiries →</a>
     </div>
 
@@ -449,13 +517,13 @@
 
       <article class="card">
         <p class="domain">intl.org</p>
-        <p class="meta">International namespace for global coordination, standards, and institutions.</p>
+        <p class="meta">Institutional namespace for international coordination, standards, and cross-border systems.</p>
         <p class="card-micro">GLOBAL · INSTITUTIONAL</p>
       </article>
 
       <article class="card">
         <p class="domain">identity.now</p>
-        <p class="meta">Root namespace for identity, access, and trust infrastructure.</p>
+        <p class="meta">Immediate identity and trust infrastructure for modern digital systems.</p>
         <p class="card-micro">IDENTITY · INFRASTRUCTURE</p>
       </article>
     </section>
@@ -463,6 +531,25 @@
     <p class="note">
       Selected positions shown. Additional assets available under NDA.
     </p>
+
+    <div class="divider"></div>
+
+    <p class="lede" style="margin-top:0;">
+      AssetsNow acts as exclusive representative for select assets within its portfolio.
+      Inquiries are evaluated based on strategic fit, intent, and capacity to steward category-level digital naming assets.
+    </p>
+
+    <section class="process" aria-label="Engagement process">
+  <h2 class="process-title">Process</h2>
+  <ol class="process-steps">
+    <li><span class="step-k">01</span><span class="step-t">Intro</span></li>
+    <li><span class="step-k">02</span><span class="step-t">NDA</span></li>
+    <li><span class="step-k">03</span><span class="step-t">Acquisition brief</span></li>
+    <li><span class="step-k">04</span><span class="step-t">Terms</span></li>
+    <li><span class="step-k">05</span><span class="step-t">Close</span></li>
+  </ol>
+  <p class="process-note">Substantive inquiries with intended use, authority, and timeline are prioritized.</p>
+</section>
 
     <section class="exec-panel" id="private-inquiries" aria-label="Private Inquiries">
       <h2 class="exec-title">Private Inquiries</h2>
@@ -473,8 +560,6 @@
         Confidential inquiries may be submitted below.
       </p>
 
-      <!-- FORMSPREE -->
-      <!-- Replace YOUR_FORMSPREE_ID before deploying -->
       <form id="exec-inquiry-form" class="exec-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
         <div class="exec-fields">
           <input name="name" type="text" required placeholder="Full name" />
@@ -502,7 +587,7 @@
 
         <button type="submit">Submit Inquiry</button>
         <div class="exec-status" aria-live="polite"></div>
-        <div class="exec-note">Confidential process. Qualified counterparties only.</div>
+        <div class="exec-note">Confidential process · Qualified counterparties only.</div>
       </form>
 
       <p class="exec-email-fallback">
@@ -512,11 +597,11 @@
       <p class="exec-note" style="margin-top:10px;">NDA available upon qualified interest.</p>
     </section>
 
-    <footer>
-      <div><strong>Inquiries</strong></div>
-      <div><a href="mailto:contact@assetsnow.com">contact@assetsnow.com</a></div>
-      <div>Discreet discussions · Qualified counterparties only.</div>
-    </footer>
+    <footer aria-label="Firm footer">
+  <div><strong>AssetsNow</strong></div>
+  <div><a href="mailto:contact@assetsnow.com">contact@assetsnow.com</a></div>
+  <div>Representation & acquisition discussions · Qualified counterparties only.</div>
+</footer>
   </main>
 
   <script>
